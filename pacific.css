@@ -1,0 +1,417 @@
+/* ------------------------------------------------------
+	Project Name: Pacific Trails Resort
+	Author: Sumit Basnet
+	Version: 1.0
+	Last Changed: 2/14/2022
+
+	Colors:
+		Dark Blue (class): #000033
+		medium dark shade of gray (#666666)
+		light blue (#90C7E3)
+		BLUE (#3399CC)
+		body-background=White (#FFFFFF)	
+		color for body.#666666
+		background color for wrapper:#FFFFF
+		background-color for visited: #90C7E3
+		background-color for hover: #39C
+		
+	TypoGraphy:
+		body:"Arial, verdana, sans-serif"
+		h1:line-height: 200%
+		h2: Georgia, sans-serif
+		footer:0.70em
+		.class: 1.25em
+		
+
+/* ---------------------Entire Web Page--------------------- */
+body { background-color: #FFFFFF;
+	background-image: url(image/background.jpg);
+	color: #666666;
+	font-family: Arial, verdana, sans-serif; }
+
+header, nav, main, footer {display: block;}
+.clear { clear: both;}
+/* --------------------------Wrapper------------------------ */
+#wrapper { width: 80%; 
+	background-color: #90C7E3;
+	min-width: 700px;
+	max-width: 1024px;
+	box-shadow: 3px 3px 3px #666;
+	color: #666666;
+	}
+
+header { background-color: #000033;
+	color: #FFFFFF;
+	line-height: 200%;
+	font-family: Georgia, sans-serif; }
+
+/* ----------------------------Nav-------------------------- */
+nav { 	float: left;
+	width: 160px;
+	padding: 20px 5px 0 5px;
+	font-weight: bold;
+ }
+
+/* ----------------------Navigation Hyperlinks----------------*/
+nav a { text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 5px;
+	border: 2px outset #CCC;
+	background-color: #003;
+	color: #FFF;}
+
+nav ul {list-style-type: none;
+	margin: 0;
+	padding-left: 0; }
+
+nav a:visited { background-color: #90C7E3;}
+
+nav a:hover { background-color: #39C;
+		border: 2px inset #666; }
+		
+
+/* -------------------------Headings------------------------ */
+
+h1 { 	line-height: 200%;
+	background-image: url(image/sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	height: 72px;
+	margin-bottom: 0;}
+h2 { 	color: #3399CC;
+	font-family: Georgia, sans-serif; }
+h3 {color: #000033;}
+
+/* --------------------------Main--------------------------- */
+dt { color: #000033; 
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;}
+.resort {color: #000033;
+	font-size: 1.25em;}
+
+main { background-color: #FFF;
+	margin-left: 170px;
+	padding: 1px 20px 1px 20px; }
+
+img { float: left;
+	padding: 0px 20px 20px 0px;}
+
+main ul{ list-style-position: inside;}
+#mobile{display:none;}
+#desktop{display:inline;}
+/* ---------------------------media------------------------------ */
+
+main img, main video, main embed {padding: 0px 20px 20px 0; }
+
+.displayImage{ display: none;}
+.displayVideo { display: block;}
+
+
+/* -------------------------Table-------------------------- */
+
+table { border: 1px solid blue;
+	border-collapse: collapse;}
+
+td,th { padding: 5px;
+	border: 1px solid  #39C;}
+
+td { text-align: center;}
+
+.textClass { text-align: left;}
+
+tr:nth-of-type(even) {
+	background-color: #F5FAFC;}
+
+
+/* -------------------------Forms-------------------------- */
+
+label {	float: left;
+	display: block;
+	width: 10em;
+	padding-right: 1em;
+	text-align: right;}
+
+input {  display: block;
+	margin-bottom: 1em;}
+
+textarea {	display: block;
+	margin-bottom: 1em;}
+
+#mySubmit {	margin-left: 10em;
+		display: inline;}
+
+#myReset {	margin-left: 0.5em;
+		display: inline;}
+
+/* --------------------------Gallery---------------------- */
+
+#gallery{position:relative;
+           height:260px;
+           clear:both;}
+#gallery ul {width:300px;
+               list-style-type:none;}
+
+ #gallery li{display:inline-block;
+              padding:5px 10px;}
+#gallery img { border-style: none;
+			float: none;
+}
+ #gallery a{text-decoration:none;
+           color:#333;
+           font-style:italic;}
+#gallery span { display: none; }
+#gallery a:hover span { display: block;
+			position: absolute;
+			top: 10px;
+			left: 340px;
+			text-align: center; }
+#desktopGallery{display:block;}
+   #mobileGallery{display:none;}
+/* -------------------------Footer-------------------------- */
+footer {font-style: italic;
+	font-size: 0.70em;
+ 	text-align: center;
+	padding: 10px;
+	background-color: #FFFFFF;
+	margin-left: 170px;
+	clear: both;}
+/* -------------------------Validation--------------------------- */
+.formDate { font-size: 0.7em;
+		font-style: italic;
+ }
+
+label.error { float: none;
+		position: relative;
+		padding-left: 25em;
+		padding-top: -2em;
+		width: 20em;
+		text-align: left;
+		font-style: italic;
+		font-size: 0.85em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #F00; }		
+/* ********************************************************************
+                          Tablet Media Query
+******************************************************************** */
+
+@media only screen and (max-width:1024px){
+	body { margin: 0;
+		padding: 0;
+		background-image: none;}
+	#wrapper { width: auto;
+		min-width: 0;
+		margin: 0;
+		box-shadow: none;
+		
+		}
+	h1{ margin: 0;
+		}
+	nav{ float: none;
+		width: auto;
+		padding: 0.5em;}
+	nav li{ display: inline-block;
+	 }
+	nav a{ padding: 1em;
+		display: inline-block;}
+
+	main{padding: 1em;
+		margin-left: 0;
+		font-size: 90%;
+		}
+	footer{ margin-left: 0;
+		}
+	#navBottom{ display: none;}
+}
+
+
+/* ********************************************************************
+                          Smartphone Media Query
+******************************************************************** */
+
+@media only screen and (max-width:768px){
+
+h1 { height: 100%;
+	font-size: 1.5em;
+	padding-left: 0.3em;
+}
+nav {	padding: 0;
+}
+footer {margin-left: 0;
+	padding: 0;
+}
+	nav a {	display: block;
+	padding: 0.2em;
+	font-size: 1.3em;
+	border-bottom-width: 1px;
+	border-bottom-color: #300;
+}
+	nav ul{ margin: 0;
+	padding: 0;
+}
+	nav li{ display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+}
+main {padding: 0.1em 0 0.1em 0.4em;
+}
+main img { display: none;
+	padding-right: 0;
+}
+main ul { list-style-position: outside;
+}
+#navBottom { display: none; }
+
+#mobile { display: inline; }
+#desktop { display: none; }
+
+
+#myReset {   margin-left: 2em;
+		display: block;
+}
+
+#mySubmit  {   margin-left: 2em;
+		display: block;
+}
+
+label {	clear: both;
+	margin-left: 2em;
+	margin-top: 0.1em;
+	text-align: left;
+}
+
+input {	clear: both;
+	margin-left: 2em;
+	margin-top: 0.1em;
+	text-align: left;
+}
+
+
+
+textarea {clear: both;
+	margin-left: 2em;
+	margin-top: 0.1em;
+	text-align: left;}
+#desktopGallery{display:none;}
+   #mobileGallery{display:block;}
+ #gallery a:hover span {display:none;}
+ #gallery img{display:block;}
+label.error { padding-left: 15em;
+		font-size: 0.em;}
+}
+
+/* ********************************************************************
+                          Print Media Query
+******************************************************************** */
+
+@media print{
+body {background-image: none;}
+
+h1 { margin-top: 0;
+	margin-bottom: 0;}
+
+nav { display: none;}
+
+footer { margin-left: 0; }
+
+main { width: 90%;
+	padding: 1px, 10px, 1px, 10px;
+	margin-left: 0;
+	margin-right: 0;}
+a {text-decoration: none;
+	color: #000;}
+
+main a { font-size: 0.9em;}
+
+#wrapper {
+	background-color: #FFF;
+	min-width: 0;
+	width: 95%;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000;}
+
+#navBottom { display: none;}
+
+ 
+.newPage { page-break-before: always; }
+
+
+.printHidden { visibility: hidden;}
+
+.displayImage{ display: none;}
+
+.displayVideo { display: block;}
+#gallery ul {width:425px;}
+#gallery a:after {content:attr(title);}
+#gallery ul a img{ float:left; }
+#desktopGallery{display:none;}
+#mobileGallery{display:none;}
+}
+
+/* ********************************************************************
+                          Games(Drum)
+******************************************************************** */
+
+
+.w {
+	background-image: url("image/tom1.png");
+  }
+  
+  .a {
+	background-image: url("image/tom2.png");
+  }
+  
+  .s {
+	background-image: url("image/tom3.png");
+  }
+  
+  .d {
+	background-image: url("image/tom4.png");
+  }
+  
+  .j {
+	background-image: url("image/snare.png");
+  }
+  
+  .k {
+	background-image: url("image/crash.png");
+  }
+  
+  .l {
+	background-image: url("image/kick.png");
+  }
+  
+  .set {
+	margin: 10% auto;
+  }
+  
+  .pressed {
+	box-shadow: 0 3px 4px 0 #DBEDF3;
+	opacity: 0.5;
+  }
+  
+  .red {
+	color: red;
+  }
+  
+  .drum {
+	outline: none;
+	border: 10px solid #404B69;
+	font-size: 5rem;
+	font-family: 'Arvo', cursive;
+	line-height: 2;
+	font-weight: 900;
+	color: #DA0463;
+	text-shadow: 3px 0 #DBEDF3;
+	border-radius: 15px;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	margin: 10px;
+	background-color: white;
+  }
